@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="diseño.css">
+</head>
+  <body>
+    <nav class="navbar bg">
+      <div class="container-fluid">
+          <a class="navbar-brand bg">
+              <img src="logocuc.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+              <b>Calculadora básica</b>
+          </a>
+      </div>
+  </nav>
+    
+  <div class="card border-dark m-5 bg3" style="width: 12cm;"">
+    <div class="card-header text-center">
+      <h4>Calculadora basica</h4>
+    </div>
+    <div class="card-body">
+      Numero 1:<input type="text" id="primerNumero" /><br><br>
+      Numero 2:<input type="text" id="segundoNumero" /><br><br>
+      <input type="button" id="btnADD" value="Sumar" onclick="Operacion('+')" />
+      <input type="button" id="btnSUB" value="Restar" onclick="Operacion('-')"/><br><br>
+      <input type="button" id="btnMUL" value="Multiplicar" onclick="Operacion('*')"/>
+      <input type="button" id="btnDIV" value="Dividir" onclick="Operacion('/')"/>	
+    
+   </div>
+  </div>
+  <script src="calc.js"></script>      
+   </body>
+</html>
+
